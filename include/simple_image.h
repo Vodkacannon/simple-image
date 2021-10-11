@@ -7,7 +7,7 @@ struct pixel_rgb
 
 struct pixel_rgba
 {
-  unsigned char r;
+	unsigned char r;
 	unsigned char g;
 	unsigned char b;
 	unsigned char a;
