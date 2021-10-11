@@ -15,7 +15,7 @@ struct pixel_rgba
 
 struct image_rgb
 {
-  struct pixel_rgb* buffer_x;
+	struct pixel_rgb* buffer_x;
 	struct pixel_rgb* buffer_y;
 };
 
