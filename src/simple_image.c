@@ -16,6 +16,5 @@ void image_rgb_set_to_color(struct image_rgb* my_image)
 	
 	for(int x = image_rgb_get_buffer_x_length; x < size; size++)
 	{
-		//pussy.
 	}
 }
