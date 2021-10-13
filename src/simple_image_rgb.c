@@ -5,11 +5,6 @@ void image_rgb_delete(struct image_rgb* my_image)
 	free(my_image);
 }
 
-void image_rgb_delete(struct image_rgb* my_image)
-{
-	free(my_image);
-}
-
 void image_rgb_get_buffer_x_size(struct image_rgb* my_image)
 {
 	return sizeof(my_image->buffer_x) / sizeof(my_image->buffer_x[0]);
