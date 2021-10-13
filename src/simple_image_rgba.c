@@ -29,8 +29,8 @@ void image_rgba_set_to_color(struct image_rgba* my_image, struct pixel_rgba* my_
 	{
 		for(int y = size_y - 1; y > 0; --y)
 		{
-			my_image->buffer_x[x] = { my_pixel->r, my_pixel->g, my_pixel->b, my_pixel->a};
-			my_image->buffer_y[y] = { my_pixel->r, my_pixel->g, my_pixel->b, my_pixel->a};
+			my_image->buffer_x[x] = { my_pixel->r, my_pixel->g, my_pixel->b, my_pixel->a };
+			my_image->buffer_y[y] = { my_pixel->r, my_pixel->g, my_pixel->b, my_pixel->a };
 		}
 	}
 }
