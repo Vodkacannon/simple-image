@@ -1,6 +1,11 @@
 #include "simple_image.h"
 
-void delete_image_rgba(struct image_rgb* my_image)
+void image_rgba_delete(struct image_rgb* my_image)
+{
+	free(my_image);
+}
+
+void image_rgba_delete(struct image_rgba* my_image)
 {
 	free(my_image);
 }
