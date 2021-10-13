@@ -1,4 +1,4 @@
-#include "simple_image.h"
+#include "simple_image_rgba.h"
 
 void image_rgba_delete(struct image_rgba* my_image)
 {
@@ -12,12 +12,12 @@ void image_rgba_delete(struct image_rgba* my_image)
 
 void image_rgba_get_buffer_x_size(struct image_rgba* my_image)
 {
-	return sizeof(my_image->buffer_x / my_image)
+	return sizeof(my_image->buffer_x) / sizeof(my_image->buffer_x[0]);
 }
 
 void image_rgba_get_buffer_y_size(struct image_rgba* my_image)
 {
-	return sizeof(my_image->buffer_x) / sizeof(my_image->buffer_x[0]);
+	return sizeof(my_image->buffer_y) / sizeof(my_image->buffer_y[0]);
 }
 
 void image_rgba_set_to_color(struct image_rgba* my_image, struct pixel_rgba* my_pixel)
