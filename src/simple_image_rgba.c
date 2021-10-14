@@ -1,5 +1,11 @@
 #include "simple_image_rgba.h"
 
+void image_rgba_create(struct image_rgba* my_image, const int width, const int height)
+{
+	my_image->buffer_x = (struct image_rgba*) malloc(my_image->buffer_x->pixel_rgba * width);
+	my_image->buffer_x = (struct image_rgba*) malloc(my_image->buffer_x->pixel_rgba * height);
+}
+
 void image_rgba_delete(struct image_rgba* my_image)
 {
 	free(my_image);
