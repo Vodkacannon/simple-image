@@ -2,10 +2,10 @@
 
 struct pixel_rgba
 {
-	unsigned char r;
-	unsigned char g;
-	unsigned char b;
-	unsigned char a;
+	uchar_t r;
+	uchar_t g;
+	uchar_t b;
+	uchar_t a;
 };
 
 struct image_rgba
