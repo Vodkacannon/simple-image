@@ -41,6 +41,11 @@ void image_rgb_set_to_color(struct image_rgb* my_image, struct pixel_rgb* my_pix
 	}
 }
 
+uchar_t rand_inclusive(uchar_t min, uchar_t max) 
+{
+	return (rand() % (hi_num - low_num)) + low_num;
+}
+
 void image_rgb_set_to_color_noise(struct image_rgb* my_image)
 {
 	int size_x = image_rgb_get_buffer_x_size(&my_image);
